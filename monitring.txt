@@ -1,0 +1,279 @@
+
+sudo apt update
+sudo dpkg -i zabbix-release_5.0-1+ubuntu$(lsb_release -rs)_all.deb
+lsb_release 
+wget https://repo.zabbix.com/zabbix/7.2/release/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_7.2+ubuntu24.04_all.deb
+ls
+dpkg -i zabbix-release_latest_7.2+ubuntu24.04_all.deb
+ls /etc/apt/sources.list.d/zabbix-release.list 
+cat /etc/apt/sources.list.d/zabbix-release.list 
+cat /etc/apt/sources.list.d/zabbix.list 
+apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent
+cat /etc/apt/sources.list.d/zabbix.list 
+apt update
+apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent
+mysql -uroot -p
+zcat /usr/share/zabbix/sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix
+mysql -uroot -p
+vim /etc/zabbix/zabbix_server.conf
+systemctl restart zabbix-server zabbix-agent apache2
+systemctl enable zabbix-server zabbix-agent apache2
+ls
+reboot
+apt install vim ssh
+apt update
+apt install vim ssh
+apt install zabbix-server-mysql zabbix-frontend-php zabbix-nginx-conf zabbix-sql-scripts zabbix-agent
+systemctl status apache2
+systemctl restart apache2
+systemctl status apache2
+sudo nano /etc/apache2/apache2.conf
+vim /etc/apache2/apache2.conf
+systemctl restart apache2
+systemctl status apache2
+vim /etc/zabbix/zabbix_server.conf
+systemctl restart zabbix-server zabbix-agent
+systemctl status zabbix-server zabbix-agent
+mysql -u root -p
+systemctl restart zabbix-server zabbix-agent
+systemctl status zabbix-server zabbix-agent
+reboot
+vim /etc/zabbix/zabbix_server.conf
+apt remove zabbix-server-mysql zabbix-frontend-php zabbix-nginx-conf zabbix-sql-scripts zabbix-agent
+vim /etc/zabbix/zabbix_server.conf
+apt install zabbix-server-mysql zabbix-frontend-php zabbix-nginx-conf zabbix-sql-scripts zabbix-agent
+apt remove --purge mysql
+apt remove --purge mysql-server
+apt install mysql-server
+mysql -u root -p
+zcat /usr/share/zabbix/sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix
+mysql -uroot -p
+vim /etc/zabbix/zabbix_server.conf
+systemctl restart zabbix-server zabbix-agent apache2
+systemctl status apache2
+systemctl restart apache2
+systemctl status apache2
+cat /var/www/html/index.nginx-debian.html 
+apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent
+sudo apt remove --purge zabbix-apache-conf
+sudo apt clean
+sudo apt autoremove
+sudo apt install zabbix-apache-conf
+sudo systemctl restart apache2
+vim /etc/apache2/conf-enabled/zabbix.conf
+sudo systemctl restart apache2
+sudo apt install zabbix-apache-conf
+sudo apt install zabbix-apache-conf --unpack
+dpkg -i /var/cache/apt/archives/zabbix-apache-conf_1%3a7.2.1-1+ubuntu24.04_all.deb --unpack
+dpkg -i /var/cache/apt/archives/zabbix-apache-conf_1%3a7.2.1-1+ubuntu24.04_all.deb
+sudo apt install zabbix-apache-conf --unp
+dpkg -i /var/cache/apt/archives/zabbix-apache-conf_1%3a7.2.1-1+ubuntu24.04_all.deb
+ls /var/cache/apt/archives/zabbix-apache-conf_1%3a7.2.1-1+ubuntu24.04_all.deb 
+dpkg --install /var/cache/apt/archives/zabbix-apache-conf_1%3a7.2.1-1+ubuntu24.04_all.deb
+clear
+sudo systemctl stop zabbix-server zabbix-agent apache2 nginx
+sudo apt remove --purge zabbix-* -y
+sudo apt autoremove --purge -y
+sudo rm -rf /var/lib/zabbix /var/log/zabbix
+sudo rm -rf /etc/zabbix
+mysql -u root -p
+sudo rm -rf /etc/apache2/conf-enabled/zabbix.conf
+sudo systemctl restart apache2
+sudo find / -name '*zabbix*'
+sudo rm -rf /etc/zabbix /etc/nginx/conf.d/zabbix.conf /etc/php/8.3/fpm/pool.d/zabbix-php-fpm.conf /etc/apt/sources.list.d/zabbix*.list /etc/init.d/zabbix-server /etc/init.d/zabbix-agent /etc/logrotate.d/zabbix* /etc/rc*.d/*zabbix*
+sudo find / -name '*zabbix*'
+sudo rm -rf /var/lib/zabbix /var/log/zabbix /var/crash/zabbix* /var/cache/apt/archives/zabbix* /var/lib/apt/lists/repo.zabbix.com*
+sudo rm -rf /usr/lib/zabbix /usr/lib/systemd/system/zabbix*.service /usr/lib/tmpfiles.d/zabbix* /usr/sbin/zabbix* /usr/share/zabbix /usr/share/man/man8/zabbix* /usr/share/doc/zabbix*
+sudo find / -name '*zabbix*'
+sudo rm -rf /run/zabbix
+sudo find / -name '*zabbix*'
+sudo deluser zabbix
+sudo delgroup zabbix
+sudo apt autoremove --purge -y
+sudo apt clean
+sudo dpkg --configure -a
+sudo find / -name '*zabbix*'
+sudo systemctl stop zabbix-server
+sudo systemctl stop zabbix-agent
+systemctl daemon-reload
+sudo systemctl stop zabbix-agent
+sudo systemctl stop zabbix-server
+sudo rm -rf /etc/systemd/system/multi-user.target.wants/zabbix-agent.service /etc/systemd/system/multi-user.target.wants/zabbix-server.service
+sudo rm -rf /etc/apt/trusted.gpg.d/zabbix-official-repo-apr2024.gpg /etc/apt/trusted.gpg.d/zabbix-tools.gpg
+sudo rm -rf /etc/alternatives/zabbix-frontend-font
+sudo rm -rf /var/lib/apache2/conf/disabled_by_admin/zabbix
+sudo rm -rf /var/lib/systemd/deb-systemd-helper-enabled/multi-user.target.wants/zabbix-agent.service /var/lib/systemd/deb-systemd-helper-enabled/zabbix-agent.service.dsh-also
+sudo rm -rf /var/lib/dpkg/info/zabbix*
+sudo rm -rf /var/lib/dpkg/alternatives/zabbix-frontend-font
+sudo rm -rf /home/user/zabbix-release_latest_7.2+ubuntu24.04_all.deb
+sudo apt autoremove --purge -y
+sudo apt clean
+sudo dpkg --configure -a
+sudo find / -name '*zabbix*'
+sudo find / -name '*zabbix*' 2>/dev/null
+wget https://repo.zabbix.com/zabbix/7.2/release/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_7.2+ubuntu24.04_all.deb
+ls
+dpkg -i zabbix-release_latest_7.2+ubuntu24.04_all.deb
+apt update
+apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent
+mysql -uroot -p
+zcat /usr/share/zabbix/sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -u zabbix -p zabbix
+zcat /usr/share/zabbix/sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix
+mysql -uroot -p
+vim /etc/zabbix/zabbix_server.conf
+zcat /usr/share/zabbix/sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix
+dpkg -l | grep zabbix-sql-scripts
+sudo apt update
+sudo apt install zabbix-sql-scripts
+sudo find / -name "server.sql.gz"
+sudo find /usr/share/zabbix -name "server.sql.gz"
+sudo apt update
+sudo apt install --reinstall zabbix-sql-scripts
+sudo find / -name "server.sql"
+zcat /usr/share/zabbix/sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix
+mysql -uroot -p
+zcat /usr/share/zabbix/sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix
+vim /etc/zabbix/zabbix_server.conf
+vim /etc/zabbix/apache.conf 
+systemctl restart zabbix-server zabbix-agent apache2
+apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent
+install
+ls
+sudo find / -name "zabbix"
+rm -rvf /etc/zabbix
+rm -rvf /var/lib/apache2/conf/enabled_by_admin/zabbix 
+vim /var/lib/mysql/zabbix
+rm -rvf /var/lib/mysql/zabbix
+ls
+sudo find / -name "zabbix"
+rm -rvf /usr/share/zabbix
+ls
+sudo find / -name "zabbix"
+apt remove --purge  zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent
+apt remove --purge  my-sql-server
+apt remove --purge  mysql-server
+sudo apt autoremove
+dpkg -r zabbix-release_latest_7.2+ubuntu24.04_all.deb
+dpkg -i zabbix-release_latest_7.2+ubuntu24.04_all.deb
+dpkg -e zabbix-release_latest_7.2+ubuntu24.04_all.deb
+dpkg --help
+dpkg -e zabbix-release_latest_7.2+ubuntu24.04_all.deb
+dpkg --help
+dpkg -i zabbix-release_latest_7.2+ubuntu24.04_all.deb
+dpkg -e zabbix-release_latest_7.2+ubuntu24.04_all.deb
+
+ls
+
+dpkg -i zabbix-release_latest_7.2+ubuntu24.04_all.deb
+sudo apt autoremove
+dpkg -i zabbix-release_latest_7.2+ubuntu24.04_all.deb
+apt update
+ar x zabbix-release_latest_7.2+ubuntu24.04_all.deb
+ls
+tar -rvf data.tar.xz 
+tar -xvf data.tar.xz 
+ls
+tar -xvf control.tar.xz 
+ls
+cp -r etc/apt/sources.list.d/zabbix* /etc/apt/sources.list.d/
+cp -r etc/apt/trusted.gpg.d/* /etc/apt/trusted.gpg.d/
+cp -r usr/share/doc/zabbix-release/* /usr/share/doc/
+cp -r usr/share/doc/zabbix-release /usr/share/doc/
+ls
+rm -rvf zabbix-release_latest_7.2+ubuntu24.04_all.deb 
+ls
+rm -rvf control.tar.xz  conffiles control
+ls
+rm -rvf etc usr
+ls
+rm -rvf debian-binary 
+ls
+apt update
+apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent
+mysql -uroot -p
+apt install mysql-server
+mysql -uroot -p
+sudo rm -rf /var/lib/mysql/zabbix
+mysql -uroot -p
+zcat /usr/share/zabbix/sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix
+mysql -uroot -p
+vim /etc/zabbix/zabbix_server.conf
+systemctl restart zabbix-server zabbix-agent apache2
+systemctl enable zabbix-server zabbix-agent apache2
+poweroff
+apt-get install -y adduser libfontconfig1 musl
+wget https://dl.grafana.com/enterprise/release/grafana-enterprise_11.4.0_amd64.deb
+ls
+sudo dpkg -i grafana-enterprise_11.4.0_amd64.deb
+sudo apt-get install -y apt-transport-https software-properties-common wget
+systemctl status grafana-server
+systemctl enable --now grafana-server
+systemctl status grafana-server
+ip a
+wget https://github.com/prometheus/node_exporter/releases/download/v1.8.2/node_exporter-1.8.2.linux-amd64.tar.gz
+ls
+wget https://github.com/prometheus/prometheus/releases/download/v3.0.1/prometheus-3.0.1.linux-amd64.tar.gz
+ls
+tar -xvf prometheus-3.0.1.linux-amd64.tar.gz 
+tar -xvf node_exporter-1.8.2.linux-amd64.tar.gz 
+ls
+cd node_exporter-1.8.2.linux-amd64
+ls
+./node_exporter 
+ls
+./node_exporter 
+
+cd prometheus-3.0.1.linux-amd64
+ls
+vim prometheus.yml 
+ static_configs:
+      - targets: ["localhost:9090"]
+
+  - job_name: "node1"
+    static_configs:
+      - targets: ["localhost:9100"]
+
+  - job_name: "pxemaster"
+    metrics_path: '/metrics'
+    scheme: 'http'
+    static_configs:
+      - targets: ["11.11.11.133:9100"]
+
+./prometheus  --config.file=prometheus.yml
+>>>Terminal 2
+./node_exporter
+scp -r node_exporter-1.8.2.linux-amd64.tar.gz pxemaster@11.11.11.133:/home/pxemaster 
+>>>node 11.11.11.133
+./node_exporter 
+
+ps -aux | grep -i prometheus
+killall 10769
+killall prometheus
+ps -aux | grep -i prometheus
+killall prometheus
+ps -aux | grep -i prometheus
+
+nc -zv 11.11.11.133 9200
+curl http://localhost:9200/metrics
+curl: (52) Empty reply from server
+
+curl http://localhost:9100/metrics
+curl http://localhost:9090/metrics
+curl http://localhost:9100/metrics
+./node_exporter 
+./prometheus  --config.file="prometheus.yml"
+date
+Tue Dec 24 11:16:40 PM IST 2024
+timedatectl list-timezones
+timedatectl set-timezone Asia/Kolkata
+./prometheus  --config.file="prometheus.yml"
+ntpdate -q pool.ntp.org
+
+sudo timedatectl set-ntp false
+timedatectl set-time "2024-12-24 18:08:40"
+timedatectl set-ntp true
+date
+timedatectl status
+./prometheus  --config.file="prometheus.yml"
+./node_exporter 
+
